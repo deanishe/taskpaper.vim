@@ -33,11 +33,11 @@ syn match taskpaperCancelled	/^.*\s@cancelled\(\(\s\|([^)]*)\).*\)\?$/
 syn sync fromstart
 
 "highlighting for Taskpaper groups
-HiLink taskpaperListItem      Identifier
-HiLink taskpaperContext       Identifier
+HiLink taskpaperListItem      Special
+HiLink taskpaperContext       Special
 HiLink taskpaperProject       Title
-HiLink taskpaperDone          NonText
-HiLink taskpaperCancelled     NonText
+HiLink taskpaperDone          Identifier
+HiLink taskpaperCancelled     Identifier
 HiLink taskpaperComment       Comment
 
 call taskpaper#tag_style_dict(g:task_paper_styles)
